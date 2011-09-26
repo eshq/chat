@@ -1,0 +1,43 @@
+body { 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  background: blue;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  z-index: 1;
+}
+
+.chat {
+  background: gray;
+  position: absolute;
+  top: 0;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding-top: 48px;
+}
+
+.messages {
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+
+.chat-bar {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+}
+
+.chat-bar input {
+  display: block;
+  width: 100%;
+}

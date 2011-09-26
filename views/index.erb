@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EventSource HQ Chat Example</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1 class="header">ESHQ Chat</h1>
+    <div class="chat">
+      <div id="messages" class="messages">
+      </div>
+      <div id="roster" class="roster">
+      </div>
+      <div class="chat-bar">
+        <form id="message">
+          <input placeholder="Type to chat" name="message"/>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="http://eventsourcehq.local:8000/es.js"></script>
+    <script src="/chat.js"></script>
+  </body>
+</html>
