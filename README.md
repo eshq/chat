@@ -3,7 +3,7 @@ EventSource HQ Chat
 
 This is a simple example of a chat application based on EventSource HQ.
 
-See it in actions here:
+See it in action here:
 
 http://eshq-chat.heroku.com/
 
