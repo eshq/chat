@@ -12,5 +12,5 @@ To install it on heroku:
     git clone git://github.com/eshq/chat.git
     cd chat
     heroku create
-    heroku addon:add eshq
+    heroku addons:add eshq
     git push heroku master
