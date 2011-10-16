@@ -5,7 +5,7 @@ get "/" do
 end
 
 post "/eshq/socket" do
-  socket = ESHQ.open(:channel => params[:channel])
+  socket = ESHQ.open(:channel => params[:channel], :presence_id => params[:presence_id])
 
   content_type :json
   '{"socket": "' + socket + '"}'
