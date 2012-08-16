@@ -7,7 +7,7 @@
     var output = $("#messages");
     var input  = $("#message input");
 
-    var eshq = new ESHQ("chat", {presence_id: nick});
+    var eshq = new ESHQ("chat");
 
     eshq.onopen = function(e) {
       $("#overlay, .login-box").hide();
@@ -21,8 +21,8 @@
 
     $("#message").submit(function(e) {
       e.preventDefault();
-
-      eshq.send(JSON.stringify({nick: nick, msg: input.val()}));
+      
+      $.post("/message", {nick: nick, msg: input.val()});
       input.val("");
     });
   });
